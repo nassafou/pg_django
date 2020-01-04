@@ -6,8 +6,7 @@
 
 from django.db import models
 
-ALBUMS = [
-  {'name': 'Sarbacane', 'artists': [ARTISTS['francis-cabrel']]},
-  {'name': 'La Dalle', 'artists': [ARTISTS['lej']]},
-  {'name': 'Luna Nueva', 'artists': [ARTISTS['rosana'], ARTISTS['maria-dolores-pradera']]}
-]
+class Artist(models.Model):
+     name = models.CharField(max_length=200, unique=True)
+
+

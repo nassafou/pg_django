@@ -1,7 +1,7 @@
 from django.conf.urls import url
 from . import views
 from django.db import models
-from  .models import ALBUMS
+#from  .models import ALBUMS
 
 urlpatterns = [
     #url(r'^$', views.index ),

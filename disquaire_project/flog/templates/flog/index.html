@@ -1,0 +1,9 @@
+<h1>Flog</h1>
+<ul>
+    {% for post in posts %}
+    <article>
+    <h2>#{{ post.id }}-{{ post.title}}</h2>
+    <p>{{ post.body }}</p>
+    </article>
+    {% endfor %}
+</ul>

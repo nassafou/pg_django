@@ -16,11 +16,15 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from store import views
+from flog import views
 from django.db import models
 
 urlpatterns = [
-    url(r'^$', views.index),
-    url(r'^store/', include('store.urls')),
+  #  url(r'^$', views.index),
+  #  url(r'^$', views.index),
+
+  #  url(r'^store/', include('store.urls')),
+    url(r'^flog/', include('flog.urls')),
     url(r'^admin/', admin.site.urls),
 ]
 

@@ -1,16 +1,20 @@
 from django.db import models
 
 # Create your models here.
-POSTS = [
-    {'id': 1, 'title': 'First Post', 'boby': 'this is my first post'},
-    {'id': 2, 'title': 'Second Post', 'boby': 'this is my second post'},
-    {'id': 3, 'title': 'third Post', 'boby': 'this is my third post'},
-]
 
-@classmethod
-def all(cls):
-    return cls.POSTS
-
-@classmethod
-def find(cls, id):
-    return cls.POSTS[int(id) -1]
+#class TimespamtedModel(models.Model):
+#    created_at = models.DateTimeField(auto_now_add=True)
+#    updated_at = models.DateTimeField(auto_now=True)
+    
+#    class Meta:
+#        abstract = True
+        
+        
+class Post(models.Model):
+    title = models.CharField(max_length=255)
+    body = models.TextField()
+   
+    
+    def __str__(self):
+        return self.title
+    

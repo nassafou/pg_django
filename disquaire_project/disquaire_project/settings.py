@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     
     'store.apps.StoreConfig',
     'flog.apps.FlogConfig',
+    'core.apps.CoreConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

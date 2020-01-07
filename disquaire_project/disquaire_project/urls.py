@@ -17,6 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from store import views
 from flog import views
+from core import views
 from django.db import models
 
 urlpatterns = [
@@ -25,6 +26,8 @@ urlpatterns = [
 
   #  url(r'^store/', include('store.urls')),
     url(r'^flog/', include('flog.urls')),
+    url(r'^core/', include('core.urls')),
+    url(r'^api-auth/', include('rest_framework.urls')),
     url(r'^admin/', admin.site.urls),
 ]
 

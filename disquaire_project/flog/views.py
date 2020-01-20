@@ -10,5 +10,7 @@ def index(request):
    # {'id': 2, 'title':'Second Post', 'body': 'This is my second post'},
    # {'id': 3, 'title':'Third Post',  'body': 'This is my third post'},
     # ]
+   [
+    ]
    posts = Post.objects.all()
    return render(request, 'flog/index.html', {'posts': posts})
